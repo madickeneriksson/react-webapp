@@ -1,0 +1,10 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+/* cores */
+@import "./cores/_variables.css";
+@import "./cores/_base.css";
+
+/* Sections */
+@import "./CSS/sections/_MainMenuSection.css";
+

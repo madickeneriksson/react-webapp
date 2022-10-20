@@ -6,7 +6,7 @@ const MenuIcon = ({link, icon }) => {
     <NavLink className="menu-icon" to={link}>
         <i className={icon}></i>
     </NavLink>
- 
+  )
 }
 
 export default MenuIcon
