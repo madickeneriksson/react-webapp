@@ -3,8 +3,11 @@
 
 /* cores */
 @import "./cores/_variables.css";
+@import "./CSS/_Colors.css";
 @import "./cores/_base.css";
 
 /* Sections */
 @import "./CSS/sections/_MainMenuSection.css";
 
+ /* Footer */
+ @import "./CSS/sections/_FooterSection.css";
