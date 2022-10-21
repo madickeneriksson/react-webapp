@@ -1,13 +1,12 @@
 import React from 'react'
 import MainMenuSection from '../sections/MainMenuSection'
 
-const NotFoundView = () => {
+const ProductsView = () => {
   return (
     <>
     <MainMenuSection />
-    <h1>404 - Page Not Found</h1>
     </>
   )
 }
 
-export default NotFoundView
+export default ProductsView
