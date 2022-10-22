@@ -1,4 +1,5 @@
-:root {--color-theme: #FF7373;
+:root {
+--color-theme: #FF7373;
 --color-gray: #bbbbbb;
 --color-light-gray: #70707066; 
 --color-darkgray: #616365;
@@ -9,4 +10,4 @@
 --color-white: #FFFFFF;
 --color-extra-light-gray: #F8F8F8;
 
---max-with:1680px;}
+--max-width:1680px;}
