@@ -8,6 +8,7 @@
 
 /* Sections */
 @import "./CSS/sections/_MainMenuSection.css";
-
- /* Footer */
+@import "./CSS/sections/_ProductGridSection";
  @import "./CSS/sections/_FooterSection.css";
+
+

@@ -22,7 +22,7 @@
         }
     .mainmenu .menu-links {
         grid-area: menulinks;
-        display: grid;
+        display: none;
         height: 100%;
         overflow: hidden;
         font-weight: 400;
@@ -75,7 +75,13 @@
             background-color: var(--color-dark);
             box-shadow: 0 0 6px 4px var(--color-shadow);
             text-decoration: none;
-           
+        }
+        .mainmenu .menu-icons .btn-menu-icon {
+            color: var(--color-white);
+            background-color: var(--color-dark);
+            border: none;
+            outline: none;
+
         }
 
 @media (min-width: 1200px) {
