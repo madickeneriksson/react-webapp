@@ -1,25 +1,38 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
-const ProductCard = () => {
+const ProductCard = ({product}) => {
+    const addToWishList = (e) => {
+        console.log("added to wish list")
+    }
+
+    const addToCompare = (e) => {
+        console.log("added to compare")
+    }
+
+    const addToCart = (e) => {
+        console.log("added to shoppingcart")
+    }
+
   return (
     <div className="col">
         <div className="card">
             <div className="card-img">
-                <img src="images/card-img.jpg" alt="" />
+                <img src={product.img} alt={product.name} />
                 <div className="card-menu">
-                    <a href="#"><i className="fa-regular fa-heart"></i></a>
-                    <a href="#"><i className="fa-regular fa-repeat"></i></a>
-                    <a href="#"><i className="fa-regular fa-bag-shopping"></i></a>
+                    <button onClick={addToWishList} className="menu-link"><i className="fa-regular fa-heart"></i></button>
+                    <button onClick={addToCompare} className="menu-link"><i className="fa-regular fa-code-compare"></i></button>
+                    <button onClick={addToCart} className="menu-link"><i className="fa-regular fa-bag-shopping"></i></button>
                 </div>
-                <a className="__btn-theme btn-card-theme" href="#">
+                    <NavLink to={`products/${product.name.toLowerCase().replace(/ /gi,"-")}`} className="__btn-theme btn-card-theme">
                     <span className="__btn-theme-left"></span>
                     <span className="__btn-theme-right"></span>
-                        QUICK VIEW
-                </a>
+                    QUICK VIEW
+                </NavLink>
             </div>
             <div className="card-body">
-                <p className="card-category">Category</p>
-                <h5 className="card-title">Modern Black Blouse</h5>
+                <p className="card-category">{product.category}</p>
+                <h5 className="card-title">{product.name}</h5>
                 <p className="card-rating">
                     <i className="fa-sharp fa-solid fa-star"></i>
                     <i className="fa-sharp fa-solid fa-star"></i>
@@ -27,7 +40,7 @@ const ProductCard = () => {
                     <i className="fa-sharp fa-solid fa-star"></i>
                     <i className="fa-sharp fa-solid fa-star"></i>
                 </p>
-                <p className="card-price">$35.00</p>
+                <p className="card-price">{product.price}</p>
             </div>
         </div>
     </div>
