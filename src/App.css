@@ -11,6 +11,9 @@
 /* Sections */
 @import "./CSS/sections/_MainMenuSection.css";
 @import "./CSS/sections/_ShowcaseSection.css";
+@import "./CSS/sections/_BreadcrumbSection.css";
+@import "./CSS/sections/_MapSection.css";
+@import "./CSS/sections/_ContactFormSection.css";
 @import "./CSS/sections/_ProductGridSection";
 @import "./CSS/sections/_TopPickersSection.css";
 @import "./CSS/sections/_FooterSection.css";

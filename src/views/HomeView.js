@@ -7,6 +7,9 @@ import TopPickersSection from '../sections/TopPickersSection'
 
 
 const HomeView = () => {
+  
+  window.top.document.title = 'Fixxo.'
+
   const [featuredProducts, setFeaturedProducts ] = useState ([
     { id: 1, name: "Modern Orange Blouse", category: "Fashion", price: "35.00", rating: 5, img: "https://images.pexels.com/photos/13142521/pexels-photo-13142521.jpeg?cs=srgb&dl=pexels-%D0%B3%D0%B0%D0%BB%D0%B8%D0%BD%D0%B0-%D0%BB%D0%B0%D1%81%D0%B0%D0%B5%D0%B2%D0%B0-13142521.jpg&fm=jpg&_gl=1*1dsps0q*_ga*NjgxNzIwODk0LjE2NjU1NzU4Mjk.*_ga_8JE65Q40S6*MTY2NjU0MTEwOS4zLjEuMTY2NjU0MTc0OS4wLjAuMA.."},
     { id: 2, name: "Modern Blanket", category: "Fashion", price: "35.00", rating: 5, img: "https://images.pexels.com/photos/8151601/pexels-photo-8151601.jpeg?cs=srgb&dl=pexels-anna-tarazevich-8151601.jpg&fm=jpg&_gl=1*eh0rgh*_ga*NjgxNzIwODk0LjE2NjU1NzU4Mjk.*_ga_8JE65Q40S6*MTY2NjU0MTEwOS4zLjEuMTY2NjU0MTg3NS4wLjAuMA.."},
