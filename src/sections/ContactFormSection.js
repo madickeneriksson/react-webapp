@@ -15,10 +15,11 @@ const ContactFormSection = () => {
         else if (values.name.length < 2)
             errors.name= "Your name must be longer then 2 characters"
 
-        if(!values.email)
+        if(!values.email) 
             errors.email = "You must enter an e-mail address"
-        else if (!regex_email.test(values.email))
+        else if (!regex_email.test(values.email)) 
             errors.email = "You must enter a valid e-mail address (ex.name@domain.com)"
+
 
         if(!values.comment)
             errors.comment = "You must enter a comment"
@@ -60,15 +61,15 @@ const ContactFormSection = () => {
                     <pre>{ JSON.stringify(formErrors)}</pre>
                      <form onSubmit={handleSubmit} noValidate>
                         <div>
-                            <input id="name" type="text" onkeyup="validate(event)"  placeholder="Your name"  value={contactForm.name} onChange={handleChange} />
+                            <input id="name" type="text" onkeyup="validate(event)"  placeholder="Your name"  value={contactForm.name} onChange={handleChange}  />
                                 <div className="errorMessage">{formErrors.name}</div>
                             </div>
                             <div>
-                            <input id="email" type="email" onkeyup="validate(event)" placeholder="Your email" value={contactForm.email} onChange={handleChange}  />
+                            <input id="email" type="email" onkeyup="validate(event)" placeholder="Your email" value={contactForm.email} onChange={handleChange} className="error"  />
                                 <div className="errorMessage">{formErrors.email}</div>
                                 </div>
                             <div className="textarea">
-                                <textarea id="comment" onkeyup="validate(event)" placeholder="Comments" value={contactForm.comment} onChange={handleChange}> </textarea>
+                                <textarea id="comment" onkeyup="validate(event)" placeholder="Comments" value={contactForm.comment} onChange={handleChange} > </textarea>
                                 <div className="errorMessage">{formErrors.comment}</div>
                                 </div>
                                 <div>

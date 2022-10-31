@@ -7,8 +7,8 @@ const TopPickersSection = () => {
     <section className="__banners container">
     <img className="left-img" src={Pamela} alt=" top pickers" />
     <img className="right-img" src={LetsBe} alt=" conscious" />
-</section>
-
+    </section>
+  
   )
 }
 

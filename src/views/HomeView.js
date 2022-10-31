@@ -4,6 +4,7 @@ import MainMenuSection from '../sections/MainMenuSection'
 import ProductGridSection from '../sections/ProductGridSection'
 import ShowcaseSection from '../sections/ShowcaseSection'
 import TopPickersSection from '../sections/TopPickersSection'
+import InfoSection from '../sections/InfoSection'
 
 
 const HomeView = () => {
@@ -33,6 +34,7 @@ const HomeView = () => {
     < ProductGridSection title="Featured Products" products={featuredProducts} />
     < ProductGridSection title="Top Products" products={topProducts} />
     < TopPickersSection />
+    < InfoSection />
     <FooterSection />
     </>
   )

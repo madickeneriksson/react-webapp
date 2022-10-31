@@ -15,6 +15,8 @@ import ProductGridSection from './sections/ProductGridSection';
 import MainMenuSection from './sections/MainMenuSection';
 import ShowcaseSection from './sections/ShowcaseSection';
 import TopPickersSection from './sections/TopPickersSection';
+import FlashsaleSection from './sections/FlashsaleSection';
+import InfoSection from './sections/InfoSection';
 
 
 function App() {
