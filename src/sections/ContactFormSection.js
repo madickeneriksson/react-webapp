@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { validate } from '../Script/Validation'
+import { submitData, validate } from '../Script/Submit_and_Validation'
 
 const ContactForm = () => {
   let currentPage = "Contact Us"
@@ -29,7 +29,7 @@ const ContactForm = () => {
     setErrors({...errors, [id]: validate(e)})
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     setFailedSubmit(false)
     setSubmitted(false)
@@ -45,29 +45,20 @@ const ContactForm = () => {
         setComments('')
         setErrors({})
 
-        fetch('https://win22-webapi.azurewebsites.net/api/contactform', {
-            method:'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: json
-        })
-
-        .then(res => {
-            if (res.status === 200) {
-                setSubmitted(true)
-                setFailedSubmit(false)
-            }
-            else {
-                setSubmitted(false)
-                setFailedSubmit(true)
-            }
-        })
+        if (await submitData('https://win22-webapi.azurewebsites.net/api/contactform', 'POST', json)) {
+            setSubmitted(true)
+            setFailedSubmit(false)
+        } else {
+            setSubmitted(false)
+            setFailedSubmit(true)
+        }
 
     } else {
      setSubmitted(false)
     }
   }
+
+
 
 
   return (
