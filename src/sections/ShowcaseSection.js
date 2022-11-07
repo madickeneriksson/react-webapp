@@ -1,6 +1,6 @@
 import React from 'react'
-import LeftImage from "../assets/images/showcase-image-girl.svg";
-import RightImage from "../assets/images/showcase-image.svg";
+import LeftImage from "../assets/images/showcase-img-1.png";
+import RightImage from "../assets/images/showcase-img-2.png";
 
 
 const ShowcaseSection = () => {
