@@ -94,9 +94,12 @@ const ContactForm = () => {
             <textarea id="comments" className={(errors.comments ? 'error': '')} style={(errors.comments ? {border: '1px solid #FF7373'}: {} )} value={comments} onChange={handleChange} placeholder="Comments"></textarea>
             <div className="errorMessage">{errors.comments}</div>
           </div>
-          <div className="formBtn">
-            <button type="submit" className="btn-theme">Post Comments</button>
-          </div>
+          
+          <button type="submit" className="btn-theme">
+              <span className="corner-topLeft"></span>
+              <span className="corner-bottomRight"></span>
+              Post Comments
+        </button>  
         </form>    
       </div>
     </section>

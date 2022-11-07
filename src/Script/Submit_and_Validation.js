@@ -35,7 +35,6 @@ export const validate = (e, form = null) => {
     }
  }
  
- 
  const validate_name = (value) => {
      if (!value)
          return 'A name is required'
