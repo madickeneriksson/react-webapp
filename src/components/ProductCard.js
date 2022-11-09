@@ -1,26 +1,20 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { useShoppingCart } from '../context/ShoppingCartContext'
 
 const ProductCard = ({item}) => {
-    const addToWishList = () => {
-        
-    }
-    const addToCompare = () => {
-
-    }
-    const addToCart = () => {
-
-    }
+    const { incrementQuantity } = useShoppingCart()
+ 
 
     return (
         <div className="col">
             <div className="card">
                 <div className="card-img">
                     <img src={item.imageName} alt={item.name} />
-                    <div className="card-menu d-xl-none">
-                        <button onClick={addToWishList} className="menu-link"><i className="fa-regular fa-heart"></i></button>
-                        <button onClick={addToCompare} className="menu-link"><i className="fa-regular fa-code-compare"></i></button>
-                        <button onClick={addToCart} className="menu-link"><i className="fa-regular fa-bag-shopping"></i></button>
+                    <div className="card-menu">
+                        <button className="menu-link"><i className="fa-regular fa-heart"></i></button>
+                        <button className="menu-link"><i className="fa-regular fa-code-compare"></i></button>
+                        <button onClick={() => incrementQuantity({articleNumber: item.articleNumber, product: item})} className="menu-link"><i className="fa-regular fa-bag-shopping"></i></button>
                     </div>
                     <NavLink to={`/products/${item.articleNumber}`} className="__btn-theme btn-card-theme">
                         <span className="__btn-theme-left"></span>  

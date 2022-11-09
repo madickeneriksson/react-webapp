@@ -94,8 +94,8 @@
         .card:hover .btn-card-theme {
             display:flex;
         }
-
-@media (min-width: 1200px) {
+/* 
+@media (min-width: 1200px) { */
     .product-grid .container {
         max-width: 1110px;
     }
@@ -108,4 +108,4 @@
         .card .btn-card-theme {
             display: none;
         }
-}
+

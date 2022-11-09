@@ -12,6 +12,7 @@ import WishListView from './views/WishListView';
 import ShoppingCartView from './views/ShoppingCartView'
 import NotFoundView from './views/NotFoundView';
 import { ProductContext, FeaturedProductsContext, FlashsaleProductsContext } from '../src/context/Contexts'
+import { ShoppingCartProvider } from './context/ShoppingCartContext';
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
 
   return (
     <BrowserRouter>
+    <ShoppingCartProvider>
     <ProductContext.Provider value={products}>
     <FeaturedProductsContext.Provider value={featured}>
     <FlashsaleProductsContext.Provider value={flashsale}>
@@ -60,7 +62,7 @@ function App() {
     </FlashsaleProductsContext.Provider>
     </FeaturedProductsContext.Provider>
     </ProductContext.Provider>
-
+    </ShoppingCartProvider>
     </BrowserRouter>
   );
 }
