@@ -9,6 +9,9 @@ import { FeaturedProductsContext } from '../context/Contexts'
 import { FlashsaleProductsContext } from '../context/Contexts'
 import FlashsaleSection from '../sections/FlashsaleSection'
 import ExtraPriceSection from '../sections/ExtraPriceSection'
+import WinterSection from '../sections/WinterSection'
+import SpecialSection from '../sections/SpecialSection'
+import SaleSection from '../sections/SaleSection'
 
 
 
@@ -23,10 +26,13 @@ const HomeView = () => {
     <>
     < MainMenuSection />
     < ShowcaseSection />
+    < WinterSection />
     < ProductGridSection title="Featured Products" items={products} />
     < TopPickersSection />
+    < SpecialSection />
     < FlashsaleSection items={flashsale} />
-    <ExtraPriceSection items={flashsale} />
+    < ExtraPriceSection items={flashsale} />
+    < SaleSection />
     < InfoSection />
     <FooterSection />
     </>

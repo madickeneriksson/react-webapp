@@ -4,7 +4,7 @@ import ProductCard from '../components/ProductCard'
 import { FlashsaleProductsContext } from '../context/Contexts'
 
 const ProductGridSection = ({title, items =[]}) => {
-  const products = useContext(FlashsaleProductsContext)
+  // const products = useContext(FlashsaleProductsContext)
  
 
   return (

@@ -16,8 +16,12 @@
 @import "./CSS/sections/_ContactFormSection.css";
 @import "./CSS/sections/_ProductGridSection";
 @import "./CSS/sections/_FlashsaleSection.css";
+@import "./CSS/sections/_ExtraPriceSection.css";
 @import "./CSS/sections/_TopPickersSection.css";
 @import "./CSS/sections/_InfoSection.css";
 @import "./CSS/sections/_FooterSection.css";
+@import "./CSS/sections/_WinterSection.css";
+@import "./CSS/sections/_SpecialSection.css";
+@import "./CSS/sections/_SaleSection.css";
 
 

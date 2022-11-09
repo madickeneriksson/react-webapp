@@ -5,7 +5,7 @@ import { FlashsaleProductsContext } from '../context/Contexts'
 
 
 const FlashsaleSection = ({title, items =[]}) => {
-  const products = useContext(FlashsaleProductsContext)
+  // const products = useContext(FlashsaleProductsContext)
 
   return (
     <section className="__flashsales container">
