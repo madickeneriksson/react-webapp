@@ -4,7 +4,7 @@ import MainMenuSection from '../sections/MainMenuSection'
 import BreadcrumbSection from '../sections/BreadcrumbSection'
 import ProductDetails from '../sections/ProductDetails'
 
-const ProductDetailsView = () => {
+const ProductsDetailsView = () => {
     const {id} = useParams()
     const [product, setProduct] = useState({})
 
@@ -16,13 +16,18 @@ const ProductDetailsView = () => {
         fetchData()
     }, [])
 
+    window.top.document.title = ' Product Details - Fixxo.'
+
     return (
     <>
-        < MainMenuSection />
-        <BreadcrumbSection currentPage="ProductsDetails" />
-        <ProductDetails product={product} />
+        <MainMenuSection />
+        <BreadcrumbSection currentPage="Product Details" />
+        <div className="container d-flex justify-content-center align-items-center" style= { { height: "500px" } }>
+      <h1>Product Details</h1>
+      </div>
+         <ProductDetails item={product} /> 
     </>
   )
 }
 
-export default ProductDetailsView
+export default ProductsDetailsView

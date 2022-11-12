@@ -8,7 +8,7 @@ import { ProductContext } from '../context/Contexts'
 
 
 const ProductsView = () => {
-  window.top.document.title = 'Fixxo.'
+  window.top.document.title = 'Products - Fixxo.'
   const products = useContext(ProductContext);
   
   return (

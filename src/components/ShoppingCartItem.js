@@ -8,7 +8,6 @@ const ShoppingCartItem = ({item}) => {
         <div className="item-img">
             <img src={item.product.imageName} alt={item.product.name} />
         </div>
-
         <div className="item-info">
             <div className="item-info-name">{item.product.name}</div>
 
@@ -18,9 +17,10 @@ const ShoppingCartItem = ({item}) => {
                 <button onClick={() => decrementQuantity(item)}>-</button>
             </div>
         </div>
-        <div className="item-price"></div>
+        <div className="item-price">
         <div>{item.product.price  * item.quantity}</div>
         <button onClick={() => removeItem(item.articleNumber)}><i class="fa-regular fa-trash"></i></button>
+        </div>
     </div>
   )
 }

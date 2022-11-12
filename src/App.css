@@ -3,7 +3,7 @@
 
 /* cores */
 @import "./CSS/cores/_variables.css";
-@import "./CSS/_Colors.css";
+@import "./CSS/cores/_Colors.css";
 @import "./CSS/cores/_base.css";
 @import "./CSS/cores/_buttons.css";
 
@@ -24,5 +24,6 @@
 @import "./CSS/sections/_SpecialSection.css";
 @import "./CSS/sections/_SaleSection.css";
 @import "./CSS/components/_ShoppingCart.css";
+
 
 
